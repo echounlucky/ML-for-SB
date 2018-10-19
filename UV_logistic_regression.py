@@ -1,5 +1,5 @@
 import os
-os.chdir('D:\\Course\\Premier league data') # Change directory to where you have saved your data
+os.chdir('C:\\ML_for_SB\\SportsData') # Change directory to where you have saved your data
 
 import pandas
 import sklearn
@@ -7,7 +7,7 @@ from sklearn import linear_model
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 
-data = 'TennisData2.csv' # Change the file name to the csv file you have saved in the directory above
+data = 'TennisData.csv' # Change the file name to the csv file you have saved in the directory above
 dataset = pandas.read_csv(data, header=None)
 
 array = dataset.values
