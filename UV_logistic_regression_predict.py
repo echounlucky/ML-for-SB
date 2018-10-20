@@ -1,6 +1,6 @@
 # As with UV_logistic_regression, delete the hash at the start of lines 2 and 3 for the assignment. 
 # import os
-# os.chdir('C:\\Folder_name\\Sub_folder_name')
+# os.chdir('C:\\Folder_name\\Sub_folder_name') 
 
 import pandas
 from sklearn.externals import joblib
@@ -14,5 +14,7 @@ dataset = pandas.read_csv(data, header=None)
 probabilities = lr.predict_proba(dataset)
 prediction = lr.predict(dataset)
 
-print(prediction)
-print(probabilities)
+for i in range(10):
+    if i == 0:
+        print("Prediction:" '\t' "P0 prob:" '\t' "P1 prob:")
+    print(prediction[i], '\t\t', "%1.3f" % probabilities[i, 0], '\t\t', "%1.3f" % probabilities[i, 1])
