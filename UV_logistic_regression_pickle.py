@@ -1,6 +1,4 @@
-# For the assignment, delete the hash at the start of lines 4 and 5. 
-# Running the code in these lines tells pyton to change the home directory for this file.
-# Change the directory name in line 5 to the folder where you have saved the [NBA] data for the assignment. 
+# As with UV_logistic_regression, delete the hash at the start of lines 2 and 3 for the assignment. 
 # import os
 # os.chdir('C:\\Folder_name\\Sub_folder_name') 
 
