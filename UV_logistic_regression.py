@@ -16,7 +16,7 @@ dataset = pandas.read_csv(data, header=None)
 
 array = dataset.values
 X = array[:,0:-1] # X becomes the whole dataset except the rightmost column
-Y = array[:,-1] # Y is the target variable, which must be in the rightmost column
+Y = array[:,-1] # Y is the target variable, which is in the rightmost column
 seed = 7
 X_train, X_test, Y_train, Y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.20, random_state=seed)
 
@@ -30,6 +30,5 @@ print("Confusion matrix:" '\n', confusion_matrix(Y_test, prediction), '\n')
 
 for i in range(10):
     if i == 0:
-        print("Prediction:" '\t' "Result:")
-    print(prediction[i], '\t\t', Y_test[i])
-
+        print("Prediction:" '\t' "P0 prob:" '\t' "P1 prob:" '\t' "Result:")
+    print(prediction[-i], '\t\t', "%1.3f" % prob_pos_lr[-i, 0], '\t\t', "%1.3f" % prob_pos_lr[-i, 1], '\t\t', Y_test[-i])
