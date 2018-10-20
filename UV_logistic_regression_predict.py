@@ -7,7 +7,7 @@ from sklearn.externals import joblib
 
 lr = joblib.load('Predictor.pkl')
 
-data = 'https://raw.githubusercontent.com/echounlucky/ML-for-SB/master/TennisData.csv' 
+data = 'https://raw.githubusercontent.com/echounlucky/ML-for-SB/master/TennisDataUpcomingMatches.csv' 
 # For the assignment, replace the URL with the name of the file name that you saved in the folder above, e.g. 'NBAData.csv' 
 dataset = pandas.read_csv(data, header=None)
 
