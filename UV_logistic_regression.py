@@ -1,5 +1,7 @@
-import os
-os.chdir('C:\\ML_for_SB\\SportsData') # Change directory to where you have saved your data
+# For the assignment, delete the hash at the start of lines 3 and 4 to change the home directory for this file.
+# Change the directory name in line 4 to the folder where you have saved the [NBA] data for the assignment. 
+# import os
+# os.chdir('C:\\Folder_name\\Sub_folder_name')
 
 import pandas
 import sklearn
@@ -7,7 +9,8 @@ from sklearn import linear_model
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 
-data = 'TennisData.csv' # Change the file name to the csv file you have saved in the directory above
+data = 'https://raw.githubusercontent.com/echounlucky/ML-for-SB/master/TennisData.csv' 
+# For the assignment, change the file name to the csv file you have saved in the home directory set up in line 4 
 dataset = pandas.read_csv(data, header=None)
 
 array = dataset.values
