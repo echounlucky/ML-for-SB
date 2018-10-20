@@ -7,7 +7,7 @@ from sklearn import linear_model
 from sklearn.externals import joblib
 
 data = "https://raw.githubusercontent.com/echounlucky/ML-for-SB/master/TennisData.csv" 
-# For the assignment, change the URL to the csv file you have saved in the home directory set up above, e.g. 'NBAData.csv'
+# For the assignment, replace the URL with the name of the file that you saved in the folder above, e.g. 'NBAData.csv'
 dataset = pandas.read_csv(data, header=None)
 
 array = dataset.values
